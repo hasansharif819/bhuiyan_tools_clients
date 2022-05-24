@@ -1,0 +1,62 @@
+[
+    {
+        "_id": 1,
+        "name": "Wrench",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "100000",
+        "price": 20,
+        "minQuantity": "10000",
+        "maxQuantity": "70000",
+        "img": ""
+    },
+    {
+        "_id": 2,
+        "name": "Drill machine",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "50000",
+        "price": 80,
+        "minQuantity": "10000",
+        "maxQuantity": "30000",
+        "img": ""
+    },
+    {
+        "_id": 3,
+        "name": "Hammer",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "900000",
+        "price": 35,
+        "minQuantity": "50000",
+        "maxQuantity": "200000",
+        "img": ""
+    },
+    {
+        "_id": 4,
+        "name": "Screwdriver",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "1000000",
+        "price": 15,
+        "minQuantity": "100000",
+        "maxQuantity": "500000",
+        "img": ""
+    },
+    {
+        "_id": 5,
+        "name": "Measuring Tape",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "700000",
+        "price": 12,
+        "minQuantity": "70000",
+        "maxQuantity": "300000",
+        "img": ""
+    },
+    {
+        "_id": 6,
+        "name": "Soldering Iron",
+        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "quantity": "300000",
+        "price": 55,
+        "minQuantity": "10000",
+        "maxQuantity": "150000",
+        "img": ""
+    }
+]

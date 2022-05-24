@@ -10,7 +10,7 @@ const Tools = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
-    console.log(products)
+    
     return (
         <div className='mx-3'>
             <h2 className='text-4xl font-bold mx-5'>Tools</h2>

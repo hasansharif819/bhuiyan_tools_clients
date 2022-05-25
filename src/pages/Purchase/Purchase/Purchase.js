@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useProducts from '../../../hooks/useProducts';
 import Product from '../Product/Product';
 
@@ -7,10 +7,10 @@ const Purchase = () => {
     const navigate = useNavigate();
     const [products] = useProducts([]);
 
-    const handlePurchase=(id)=>{
-        console.log(parseInt(id))
+    const handlePurchase= id =>{
         navigate(`/purchase/${id}`);
     }
+    
     
     return (
         <div className='my-5'>
@@ -29,7 +29,8 @@ const Purchase = () => {
                                 <h2 className='text-xl font-bold'>In stock: {product.quantity}</h2>
                                 <div className="card-actions justify-end">
                                 <div className="card-actions m-2">
-                    <button onClick={()=>handlePurchase(product._id)} className="btn btn-primary">Purchase</button>
+                                <Link to={`/purchase/${product._id}`}><button onClick={() => handlePurchase(product._id)} className='btn btn-primary text-2xl font-bold my-3 p-2'>Details</button></Link>
+
                 </div>
                                 </div>
                             </div>

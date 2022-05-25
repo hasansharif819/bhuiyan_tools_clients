@@ -2,7 +2,7 @@
     {
         "_id": 1,
         "name": "Wrench",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "Basically, a wrench consists of a stout lever with a notch at one or both ends for gripping the bolt or nut in such a way that it can be twisted by a pull on the wrench at right angles to the axes of the lever and the bolt or nut. .This is made with actual iron metal. Made with Fully machinaries. Made by China",
         "quantity": "100000",
         "price": 20,
         "minQuantity": "10000",
@@ -12,7 +12,7 @@
     {
         "_id": 2,
         "name": "Drill machine",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "Since acquiring the rights to build the RockBuster water well drilling rigs in April of 2010 we have made many changes to adapt the rigs to the needs of the end user.  Since 2010 we have added models, increased tophead power and increased efficiency. This is made with actual iron metal. Made with Fully machinaries. Made by China",
         "quantity": "50000",
         "price": 80,
         "minQuantity": "10000",
@@ -22,7 +22,7 @@
     {
         "_id": 3,
         "name": "Hammer",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "A hammer is a simple force amplifier that works by converting mechanical work into kinetic energy and back. In the swing that precedes each blow, the hammer head stores a certain amount of kinetic energy—equal to the length D of the swing times the force f produced by the muscles of the arm and by gravity.",
         "quantity": "900000",
         "price": 35,
         "minQuantity": "50000",
@@ -32,7 +32,7 @@
     {
         "_id": 4,
         "name": "Screwdriver",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "A screwdriver is a tool, manual or powered, used for driving screws. A typical simple screwdriver has a handle and a shaft, ending in a tip the user puts into the screw head before turning the handle.",
         "quantity": "1000000",
         "price": 15,
         "minQuantity": "100000",
@@ -42,7 +42,7 @@
     {
         "_id": 5,
         "name": "Measuring Tape",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "A measuring tape is a flexible tool used for measuring length. It is made up of materials like fiberglass, cloth, plastic, metal ribbon, or strip. So, it is a kind of flexible ruler also known as a tape measure. It is marked in centimeters and inches.",
         "quantity": "700000",
         "price": 12,
         "minQuantity": "70000",
@@ -52,7 +52,7 @@
     {
         "_id": 6,
         "name": "Soldering Iron",
-        "description": "This is made with actual iron metal. Made with Fully machinaries. Made by Chaina",
+        "description": "A soldering iron is a hand tool used to heat solder, usually from an electrical supply at high temperatures above the melting point of the metal alloy. This allows for the solder to flow between the workpieces needing to be joined.",
         "quantity": "300000",
         "price": 55,
         "minQuantity": "10000",

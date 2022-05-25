@@ -4,7 +4,7 @@ import meeting from '../../../assets/summary/meeting.webp';
 const Meeting = () => {
     return (
         <div>
-        <h2 className='text-3xl font-bold text-purple-400 my-3'>Meeting</h2>
+        <h2 className='text-4xl font-bold mx-5 text-primary my-5'>Meeting</h2>
         <div className="hero min-h-screen bg-base-300">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src={meeting} className="max-w-sm rounded-lg shadow-2xl" />

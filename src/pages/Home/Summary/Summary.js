@@ -8,8 +8,8 @@ import revenue1 from '../../../assets/summary/revenue1.webp';
 const Summary = () => {
     return (
         <div>
-            <h2 className='text-3xl font-bold mt-3'>Business Summary</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5'>
+            <h2 className='text-4xl font-bold mx-5 text-primary my-5'>Business Summary</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5 bg-base-300'>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">We served 300+ customers</h2>

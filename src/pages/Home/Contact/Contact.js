@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div>
-            <h2 className='text-3xl font-bold text-purple-400 my-3'>Contact</h2>
-        <div className="hero min-h-screen bg-base-400">
+        <div className='my-5'>
+            <h2 className='text-4xl font-bold mx-5 text-primary my-5'>Contact</h2>
+        <div className="hero min-h-screen bg-base-300">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Contact</h1>

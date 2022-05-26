@@ -9,7 +9,7 @@ import { Navigate } from 'react-router-dom';
 
 const Profile = () => {
     const [user] = useAuthState(auth);
-    console.log(user)
+    // console.log(user)
 
     //handle update
     const handleUpdate = event => {

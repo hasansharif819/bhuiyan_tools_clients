@@ -21,6 +21,7 @@ import Profile from './pages/Dashboard/Profile';
 import Users from './pages/Dashboard/Users';
 import RequireAdmin from './pages/Login/RequireAdmin';
 import AllOrders from './pages/Dashboard/AllOrders';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/payment' element={<Payment></Payment>}></Route>
         <Route path='/purchase' element={
           <RequireAuth>

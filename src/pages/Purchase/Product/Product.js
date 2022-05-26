@@ -96,7 +96,6 @@ const Product = () => {
 
                     <p className="py-6 text-3xl">Grand total: ${total} </p>
                     
-                    {/* <button className="btn btn-primary">Purchase</button> */}
                     <label
                         htmlFor="booking-modal"
                         

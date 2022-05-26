@@ -7,7 +7,7 @@ import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import RequireAuth from './pages/Login/RequireAuth';
 import SignUp from './pages/Login/SignUp';
-import Portfolio from './pages/Dashboard/Portfolio';
+import Portfolio from './pages/Portfolio/Portfolio';
 import Product from './pages/Purchase/Product/Product';
 import Purchase from './pages/Purchase/Purchase/Purchase';
 import Footer from './pages/Shared/Footer/Footer';
@@ -17,6 +17,7 @@ import MyOrders from './pages/Dashboard/MyOrders';
 import MyReview from './pages/Dashboard/MyReview';
 import Payment from './pages/Payment/Payment';
 import NotFound from './pages/NotFound/NotFound';
+import Profile from './pages/Dashboard/Profile';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        {/* <Route path='/home' element={<Home></Home>}></Route> */}
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='/payment' element={<Payment></Payment>}></Route>
         <Route path='/purchase' element={
           <RequireAuth>
@@ -38,7 +39,7 @@ function App() {
             <Dashboard></Dashboard>
           </RequireAuth>
         }>
-          <Route index element={<Portfolio></Portfolio>}></Route>
+          <Route index element={<Profile></Profile>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path='myreview' element={<MyReview></MyReview>}></Route>
           

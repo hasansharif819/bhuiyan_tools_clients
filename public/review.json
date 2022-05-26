@@ -1,0 +1,22 @@
+[
+    {
+        "_id": 1,
+        "review": "This is very much good products. Thanks",
+        "rating": 5
+    },
+    {
+        "_id": 2,
+        "review": "Good. Thanks",
+        "rating": 4
+    },
+    {
+        "_id": 3,
+        "review": "I need more 120000 pieces hammer. Thanks",
+        "rating": 5
+    },
+    {
+        "_id": 4,
+        "review": "Awesome screwdriver. Thanks",
+        "rating": 5
+    }
+]

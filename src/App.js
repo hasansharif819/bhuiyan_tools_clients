@@ -19,6 +19,8 @@ import Payment from './pages/Payment/Payment';
 import NotFound from './pages/NotFound/NotFound';
 import Profile from './pages/Dashboard/Profile';
 import Users from './pages/Dashboard/Users';
+import RequireAdmin from './pages/Login/RequireAdmin';
+import AllOrders from './pages/Dashboard/AllOrders';
 
 function App() {
   return (
@@ -43,7 +45,8 @@ function App() {
           <Route index element={<Profile></Profile>}></Route>
           <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path='myreview' element={<MyReview></MyReview>}></Route>
-          <Route path='users' element={<Users></Users>}></Route>
+          <Route path='users' element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path='allOrders' element={<RequireAdmin><AllOrders></AllOrders></RequireAdmin>}></Route>
           
         </Route>
         

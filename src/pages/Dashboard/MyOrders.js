@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [user] = useAuthState(auth);
     const [orders, setOrders] = useState([]);
 
-    useEffect( () => {
-        if(user){
+    useEffect(() => {
+        if (user) {
             fetch(`http://localhost:5000/order?client=${user.email}`)
-            .then(res => res.json())
-            .then(data => setOrders(data))
+                .then(res => res.json())
+                .then(data => setOrders(data))
         }
     }, [user])
 
     //delete button 
 
     const handleUserDelete = _id => {
-    console.log(_id)
-        const proceed = window.confirm('Are you sure you want to delete?');
+        console.log(_id)
+        const proceed = window.confirm('Are you sure you want to Cancel?');
         if (proceed) {
             console.log('deleting product with id, ', _id);
             const url = `http://localhost:5000/order/${_id}`;
@@ -51,6 +51,7 @@ const MyOrders = () => {
                             <th>Service</th>
                             <th>Quantity</th>
                             <th>Delete</th>
+                            <th>Payment</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,10 +66,14 @@ const MyOrders = () => {
                                 <td>{order.service}</td>
                                 <td>{order.quantity}</td>
                                 <td>
-                                <button 
-                                onClick={() => handleUserDelete(order._id)}
-                                 className='btn bg-red-900'>Delete</button>
-
+                                    <button
+                                        onClick={() => handleUserDelete(order._id)}
+                                        className='btn bg-red-900'>Cancel</button>
+                                </td>
+                                <td>
+                                <Link to='/payment'>
+                                        <button className="btn btn-primary  font-bold my-3 p-2">Payment</button>
+                                    </Link>
                                 </td>
                             </tr>
                             )}

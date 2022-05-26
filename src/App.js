@@ -8,7 +8,6 @@ import Login from './pages/Login/Login';
 import RequireAuth from './pages/Login/RequireAuth';
 import SignUp from './pages/Login/SignUp';
 import Portfolio from './pages/Dashboard/Portfolio';
-import Products from './pages/Products/Products/Products';
 import Product from './pages/Purchase/Product/Product';
 import Purchase from './pages/Purchase/Purchase/Purchase';
 import Footer from './pages/Shared/Footer/Footer';
@@ -16,6 +15,8 @@ import Navbar from './pages/Shared/Navbar/Navbar';
 import Dashboard from './pages/Dashboard/Dashboard';
 import MyOrders from './pages/Dashboard/MyOrders';
 import MyReview from './pages/Dashboard/MyReview';
+import Payment from './pages/Payment/Payment';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         {/* <Route path='/home' element={<Home></Home>}></Route> */}
-        <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/payment' element={<Payment></Payment>}></Route>
         <Route path='/purchase' element={
           <RequireAuth>
             <Purchase></Purchase>
@@ -45,6 +46,7 @@ function App() {
         
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
 

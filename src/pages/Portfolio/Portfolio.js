@@ -4,13 +4,13 @@ import sharif from '../../assets/sharif1.jpg';
 const Portfolio = () => {
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row-reverse">
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse">
                     <img height={200} width={200} src={sharif} alt='' />
                     <div>
-                        <h1 class="text-5xl font-bold">Sharif Hasan</h1>
-                        <p class="py-2">West dhanmondi, Dhaka</p>
-                        <p class="py-2">+8801640911511</p>
+                        <h1 className="text-5xl font-bold">Sharif Hasan</h1>
+                        <p className="py-2">West dhanmondi, Dhaka</p>
+                        <p className="py-2">+8801640911511</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Portfolio = () => {
                     <small>Tools booking system all over the world</small>
                     <small>Work with Front end also backend using react.js and express.js</small>
                     <small>Tools: React.JS, Firebase, MongoDB, Express.js, daisiUI</small>
-                    <h2>https://smart-zone-819.web.app/</h2>
+                    <h2>https://bhuiyan-tools.web.app</h2>
                 </div>
                 <div>                                             <h2>Smart Zone</h2>
                     <small>Smartphone  management  system</small>

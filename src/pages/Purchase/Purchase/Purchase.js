@@ -19,7 +19,7 @@ const Purchase = () => {
                     products.map(product => <div key={product._id}>
                         <div className="card w-96 bg-base-100 shadow-xl">
                             <figure><img src={product.img} alt="Shoes" /></figure>
-                            <div className="card-body">
+                            <div className="card-body bg-base-200">
                                 <h2 className="card-title">
                                     {product.name}
                                     <div className="badge badge-secondary">NEW</div>
@@ -27,9 +27,9 @@ const Purchase = () => {
                                 <h2 className='text-3xl font-bold'>Price: ${product.price}</h2>
                                 <p>Description: {product.description}</p>
                                 <h2 className='text-xl font-bold'>In stock: {product.quantity}</h2>
-                                <div className="card-actions justify-end">
+                                <div className="card-actions justify-center">
                                 <div className="card-actions m-2">
-                                <Link to={`/purchase/${product._id}`}><button onClick={() => handlePurchase(product._id)} className='btn btn-primary text-2xl font-bold my-3 p-2'>Details</button></Link>
+                                <Link to={`/purchase/${product._id}`}><button onClick={() => handlePurchase(product._id)} className='btn btn-primary font-bold btn-xs'>Buy Now</button></Link>
 
                 </div>
                                 </div>

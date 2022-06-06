@@ -25,7 +25,7 @@ const Profile = () => {
             phone: event.target.phone.value,
             img: event.target.img.value
         }
-        fetch('http://localhost:5000/user', {
+        fetch('https://damp-bayou-30389.herokuapp.com/user', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
@@ -48,49 +48,62 @@ const Profile = () => {
                     
                 }
             })
-
-
     }
 
     //query using email
     const [items, setItems] = useState([]);
 
-    useEffect( () => {
-        const getItems = async() => {
-        const email = user.email;
-            const url = `http://localhost:5000/user?email=${email}`;
-            const {data} = await axios.get(url)
-            setItems(data);
-            try{
-                const {data} = await axios.get(url, {
-                    headers: {
-                        authorization: `bearer ${localStorage.getItem('accessToken')}`
-                    }
-                });
-                    setItems(data);
-            }
-            catch(error){
-                if(error.response.status === 401 || 403){
-                    signOut(auth);
-                    Navigate('/login');
-                }
+    // useEffect( () => {
+    //     const getItems = async() => {
+    //     const email = user?.email;
+    //         const url = `http://localhost:5000/profile/client?=${email}`;
+    //         const {data} = await axios.get(url)
+    //         setItems(data);
+    //         try{
+    //             const {data} = await axios.get(url, {
+    //                 headers: {
+    //                     authorization: `bearer ${localStorage.getItem('accessToken')}`
+    //                 }
+    //             });
+    //                 setItems(data);
+    //         }
+    //         catch(error){
+    //             if(error.response.status === 401 || 403){
+    //                 signOut(auth);
+    //                 Navigate('/login');
+    //             }
 
-            }
-        }
-        getItems();
+    //         }
+    //     }
+    //     getItems();
+    // }, [user])
+    useEffect( () =>{
+        const url = `http://localhost:5000/profile/client?=${user?.email}`;
+        fetch(url)
+        .then(res => res.json())
+        .then(data => setItems(data))
     }, [user])
 
+// console.log(items);
 
     return (
         <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
-    <img src={user?.photoURL} className="max-w-sm rounded-lg shadow-2xl" alt='' />
+    {/* <img src={user?.photoURL} className="max-w-sm rounded-50% shadow-2xl" alt='' /> */}
+    <div class="avatar online">
+  <div class="w-24 rounded-full">
+    <img src={user?.photoURL} alt='' />
+  </div>
+</div>
     <div>
-        <h2>Total : {items.length}</h2>
+    
+        
       <h1 className="text-5xl font-bold">{user?.displayName}</h1>
       <p className="py-2">Email: {user?.email}</p>
-      <p className="py-2">Phone: {user?.phoneNumber}</p>
-      <p className="py-2">Education: {user?.phoneNumber}</p>
+      <p className="py-2">Phone: {items.phone}</p>
+      <p className="py-2">Education: {items.edu}</p>
+      <p className="py-2">Age: {items.age}</p>
+      <p className="py-2">Address: {items.address}</p>
       <p className="py-2">From: {user?.providerId}</p>
 
       <label

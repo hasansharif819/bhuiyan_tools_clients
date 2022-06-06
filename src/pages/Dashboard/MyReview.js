@@ -15,7 +15,7 @@ const MyReview = () => {
             reviews: event.target.review.value,
             rating: event.target.rating.value
         }
-        fetch('http://localhost:5000/review', {
+        fetch('https://damp-bayou-30389.herokuapp.com/review', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
